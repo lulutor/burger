@@ -40,34 +40,34 @@
             <br />
             <form>
               <div class="form-group">
-                <label>Nom:</label><?php echo '' . $item['name'];?>
+                <label>Nom:</label><?php echo ' ' . $item['name'];?>
               </div>
               <div class="form-group">
-                <label>Description:</label><?php echo '' . $item['description'];?>
+                <label>Description:</label><?php echo ' ' . $item['description'];?>
               </div>
               <div class="form-group">
-                <label>Prix:</label><?php echo '' . number_format((float)$item['price'],2,'.','');?>
+                <label>Prix:</label><?php echo ' ' . number_format((float)$item['price'],2,'.','') . " €";?>
               </div>
               <div class="form-group">
-                <label>Categories:</label><?php echo '' . $item['category'];?>
+                <label>Categories:</label><?php echo ' ' . $item['category'];?>
               </div>
               <div class="form-group">
-                <label>Image:</label><?php echo '' . $item['image'];?>
+                <label>Image:</label><?php echo ' ' . $item['image'];?>
               </div>
             </form>
             <div class="form-actions">
               <a class="btn btn-primary" href="index.php"><span class="glyphicon glyphicon-arrow-left"></span> Retour</a>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 site">
             <div class="thumbnail">
-              <img src="images/m1.png" alt="..." />
+              <img src="<?php echo '../images/' . $item['image'];?>"alt="..." />
               <div class="price">
-                8.90 €
+                <?php echo number_format((float)$item['price'],2,'.',''). " €";?>
               </div>
               <div class="caption">
-                <h4><?php echo '' . $item['name'];?></h4>
-                <p><?php echo '' . $item['description'];?></p>
+                <h4><?php echo $item['name'];?></h4>
+                <p><?php echo $item['description'];?></p>
                 <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span>Commander</a>
               </div>
             </div>

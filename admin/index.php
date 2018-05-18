@@ -15,7 +15,7 @@
       <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span> Burger Code <span class="glyphicon glyphicon-cutlery"></span></h1>
       <div class="container admin">
         <div class="row">
-          <h1><strong>Liste des items</strong><a href="" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span>Ajouter</a></h1>
+          <h1><strong>Liste des items </strong><a href="insert.php" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span>Ajouter</a></h1>
           <table class="table table-striped table-bordered">
             <thead>
               <tr>
@@ -42,7 +42,7 @@
                   echo '<td width=300>';
                   echo '<a class="btn btn-default" href="view.php?id=' . $item['id'] . '"><span class="glyphicon glyphicon-eye-open"></span>Voir</a>';
                   echo '<a class="btn btn-primary" href="update.php?id=' . $item['id'] . '"><span class="glyphicon glyphicon-eye-pencil"></span>Modifier</a>';
-                  echo '<a class="btn btn-danger" href="delete.php?id=' . $item['id'] . '"><span class="glyphicon glyphicon-eye-remove"></span>Voir</a>';
+                  echo '<a class="btn btn-danger" href="delete.php?id=' . $item['id'] . '"><span class="glyphicon glyphicon-eye-remove"></span>Suprimer</a>';
                   echo '</td>';
                   echo '</tr>';
                 }
